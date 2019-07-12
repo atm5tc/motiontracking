@@ -1,5 +1,3 @@
-%% ECE 4501 - Digital Image Processing
-% Experiment 3 - Motion Tracking
 clear all; close all;
 
 sizes = [96,128];               % Frame size
