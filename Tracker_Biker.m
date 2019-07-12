@@ -1,5 +1,3 @@
-%% ECE 4501 - Digital Image Processing
-% Experiment 3 - Motion Tracking
 clear all; close all;
 
 sizes = [360,640];               % Frame size
@@ -21,7 +19,7 @@ end
 frame1 = imread('0001.jpg');
 frame1 = mat2gray(squeeze(frame1(:,:,2)));
 
-cd '~/Documents/UVA 2018/ECE 4501/Experiment 3';
+cd '~/Documents/';
 
 % Build template to match
 Bt = zeros(box(1),box(2));
@@ -107,7 +105,7 @@ close(v);
 implay(vid);
 
 %% Groundtruth Error Comparison
-cd '~/Documents/UVA 2018/ECE 4501/Experiment 3/Biker/';
+cd '~/Documents/';
 groundtruth = csvread('groundtruth_rect.txt');
 error_rows = abs(track(:,2)-groundtruth(:,1));
 error_cols = abs(track(:,1)-groundtruth(:,2));
