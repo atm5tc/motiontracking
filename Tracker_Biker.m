@@ -11,7 +11,7 @@ framestart = 0;                 % Start frame # of stream
 track = zeros(framesize, 2);     % Vector Array of tracker coordinates
 track_t = 40;                    % Tracking threshold, if too far away track(i) = track(i-1)
 % Build stream of all frames
-cd '~/Documents/UVA 2018/ECE 4501/Experiment 3/Biker/img';
+cd '~/Documents/';
 stream = zeros(framesize,sizes(1),sizes(2));
 for i = 1:framesize
     string = strcat(num2str(i+framestart,'%04.f'),'.jpg'); % String formatter 'xxxx.jpg'
