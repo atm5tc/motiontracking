@@ -9,14 +9,14 @@ framesize = 327;                % Number of frames
 track = zeros(framesize, 2);    % Vector Array of tracker coordinates
 track_t = 8;                    % Tracking threshold, if too far away track(i) = track(i-1)
 % Build stream of all frames
-cd '~/Documents/UVA 2018/ECE 4501/Experiment 3/Coupon/img';
+cd '~/Documents/';
 stream = zeros(framesize,sizes(1),sizes(2));
 for i = 1:framesize
     string = strcat(num2str(i,'%04.f'),'.jpg'); % String formatter 'xxxx.jpg'
     stream(i,:,:) = rgb2gray(imread(string));
 end
 
-cd '~/Documents/UVA 2018/ECE 4501/Experiment 3';
+cd '~/Documents/';
 
 % Build template to match
 Bt = zeros(box(1),box(2));
