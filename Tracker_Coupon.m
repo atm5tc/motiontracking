@@ -72,7 +72,7 @@ close(v);
 implay(vid);
 implay(vid);
 %% Groundtruth Error Comparison
-cd '~/Documents/UVA 2018/ECE 4501/Experiment 3/Coupon/';
+cd '~/Documents/';
 groundtruth = csvread('groundtruth_rect.txt');
 error_rows = abs(track(:,2)-groundtruth(:,1));
 error_cols = abs(track(:,1)-groundtruth(:,2));
